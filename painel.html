@@ -15,32 +15,36 @@
     </style>
 </head>
 <body>
-
-    <h2>Adicionar Dados</h2>
-    <form id="formDados">
-        <input type="text" id="nome" placeholder="Nome" required><br>
+    <div class="painel_container">
+        <div class="painel_box">
+        <h2>Adicionar Dados</h2>
+        <form id="formDados">
+                <input type="text" id="nome" placeholder="Nome" required><br>
+        
         <select id="categoria">
             <option value="adulto">Adulto</option>
             <option value="crianca">Criança</option>
         </select><br>
-        <input type="number" id="peso" placeholder="Peso (kg)" required><br>
-        <input type="number" id="imc" placeholder="IMC (Apenas adultos)"><br>
-        <input type="number" id="gordura" placeholder="Peso Gordura (kg)"><br>
-        <input type="number" id="musculo" placeholder="Peso Músculo (kg)"><br>
-        <input type="number" id="idade" placeholder="Idade Corporal"><br>
-        <input type="number" id="visceral" placeholder="Gordura Visceral"><br>
-        <button onclick="enviarDados()">Enviar Dados</button>
+                <input type="number" id="peso" placeholder="Peso (kg)" required><br>
+                <input type="number" id="imc" placeholder="IMC (Apenas adultos)"><br>
+                <input type="number" id="gordura" placeholder="Peso Gordura (kg)"><br>
+                <input type="number" id="musculo" placeholder="Peso Músculo (kg)"><br>
+                <input type="number" id="idade" placeholder="Idade Corporal"><br>
+                <input type="number" id="visceral" placeholder="Gordura Visceral"><br>
+            <button onclick="enviarDados()">Enviar Dados</button>
 
-    </form>
+        </form>
 
-    <button onclick="mostrarRanking()">Verificar Ranking</button>
-    <script>
-        function mostrarRanking(){
-            window.location.href = "ranking.html";
-        }
-    </script>
+            <button onclick="mostrarRanking()">Verificar Ranking</button>
 
-    <script src="application/script.js" type="text/javascript"></script>
+            <script>
+                function mostrarRanking(){
+                    window.location.href = "ranking.html";
+                }
+            </script>
 
+            <script src="application/script.js" type="text/javascript"></script>
+        </div>
+    </div>
 </body>
 </html>

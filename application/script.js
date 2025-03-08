@@ -22,7 +22,7 @@ function registrarLogin(){
 
 // Dados do registro no painel.html
 async function enviarDados() {
-    const url = "https://script.google.com/macros/s/AKfycbx2LS1iU55fEr4bYZxpEFq2GasGC2psG1YkFkebNgGv3GJT5PG_yYmJvS6b5O33Avs/exec"; // Cole a URL correta do Apps Script
+    const url = "https://script.google.com/macros/s/AKfycbwgyiURHioe_dIWihaAGVj-aTV-S0vuF7ytj0QTJDKe3kTVcJa47REPqKkdnyLKpHkw/exec"; // Cole a URL correta do Apps Script
 
     function mostrarRanking() {
         document.getElementById("rankingBox");
