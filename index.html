@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitCristo - Login</title>
+</head>
+<body>
+
+    <div class="menu_container">
+        <div class="menu_box">
+            <h1>Bem-vindo ao FitCristo</h1>
+                <button onclick="mostrarLogin()">Entrar</button>
+
+                <div class="login-container" id="loginBox">
+                    <input type="text" placeholder="Usuário" id="usuario"><br>
+                    <input type="password" placeholder="Senha" id="senha"><br>
+                    <button onclick="validarLogin()">Acessar</button>
+                </div>
+
+                <button onclick="registrarLogin()">Registrar-se</button>
+                <script>
+                    function registrarLogin(){
+                        window.location.href = "painel.html";
+                    }
+                </script>
+        </div>
+    </div>
+
+    <script src="application/script.js" type="text/javascript"></script>
+    
+</body>
+</html>
