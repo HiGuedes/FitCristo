@@ -1,4 +1,3 @@
-
 // funções de botões no index.html
 function mostrarLogin() {
     document.getElementById("loginBox").style.display = "block";

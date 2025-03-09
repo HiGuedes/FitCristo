@@ -5,14 +5,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"rel="stylesheet">
     <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/painel.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCristo - Inserir Dados</title>
-    <style>
-        body { font-family: Arial, sans-serif; text-align: center; }
-        input, select { margin: 10px; padding: 8px; width: 200px; }
-        button { padding: 10px; cursor: pointer; }
-    </style>
+
 </head>
 <body>
     <div class="painel_container">
@@ -31,7 +28,7 @@
                 <input type="number" id="musculo" placeholder="Peso Músculo (kg)"><br>
                 <input type="number" id="idade" placeholder="Idade Corporal"><br>
                 <input type="number" id="visceral" placeholder="Gordura Visceral"><br>
-            <button onclick="enviarDados()">Enviar Dados</button><br>
+                <input type="submit" value="Enviar" id="enviar"><br>
 
         </form>
 
@@ -44,7 +41,14 @@
             </script>
 
         <script src="src/api-project/script.js" type="text/javascript"></script>
+        <script src="src/api-project/painel.js" type="text/javascript"></script>
         </div>
     </div>
+
+    <footer class="footer">
+        <span>Desenvolvido por Luiz Carlos</span>
+    </div>
+</footer>
+
 </body>
 </html>
