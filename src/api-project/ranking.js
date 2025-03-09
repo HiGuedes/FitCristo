@@ -14,3 +14,11 @@ async function carregarMelhorParticipante() {
 }
 
 carregarMelhorParticipante();
+
+function abrirModal() {
+    document.getElementById("modalGrafico").style.display = "flex";
+}
+
+function fecharModal() {
+    document.getElementById("modalGrafico").style.display = "none";
+}
