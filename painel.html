@@ -4,7 +4,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCristo - Inserir Dados</title>
@@ -18,7 +18,7 @@
     <div class="painel_container">
         <div class="painel_box">
         <h2>Adicionar Dados</h2>
-        <form id="formDados">
+        <form method="post" action="" id="formDados">
                 <input type="text" id="nome" placeholder="Primeiro Nome" required><br>
         
         <select id="categoria">
@@ -31,7 +31,7 @@
                 <input type="number" id="musculo" placeholder="Peso Músculo (kg)"><br>
                 <input type="number" id="idade" placeholder="Idade Corporal"><br>
                 <input type="number" id="visceral" placeholder="Gordura Visceral"><br>
-            <button onclick="enviarDados()">Enviar Dados</button>
+            <button onclick="enviarDados()">Enviar Dados</button><br>
 
         </form>
 
@@ -43,7 +43,7 @@
                 }
             </script>
 
-            <script src="application/script.js" type="text/javascript"></script>
+        <script src="src/api-project/script.js" type="text/javascript"></script>
         </div>
     </div>
 </body>
