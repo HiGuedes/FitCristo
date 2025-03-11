@@ -15,10 +15,20 @@ async function carregarMelhorParticipante() {
 
 carregarMelhorParticipante();
 
+// Abre o modal
 function abrirModal() {
     document.getElementById("modalGrafico").style.display = "flex";
 }
 
+// Fecha o modal
 function fecharModal() {
     document.getElementById("modalGrafico").style.display = "none";
 }
+
+// Fecha o modal ao clicar fora dele
+window.onclick = function(event) {
+    let modal = document.getElementById("modalGrafico");
+    if (event.target === modal) {
+        fecharModal();
+    }
+};

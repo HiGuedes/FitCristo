@@ -1,7 +1,7 @@
 h2{ /* Estilização da fonte utilizado em H2 */
     margin-bottom: 10px;
     font-size: 26px;
-    color: white;
+    color: black;
 }
 
 #enviar{ /* Estilização do botão enviar */
@@ -27,13 +27,14 @@ h2{ /* Estilização da fonte utilizado em H2 */
 }
 
 .painel_box{ /* Box contendo todo o formulário e botão pra envio */
-    width: 350px;
-    height: 550px;
+    width: 650px;
+    height: 700px;
+    padding: 10px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-image: linear-gradient(90deg, #544B3D, #0B1D51);
+    background-image: linear-gradient(90deg, #c3c3c3, #fff);
     border-radius: 20px;
 }
 
