@@ -9,14 +9,6 @@ body {
     background: url('https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/imgs/fundo.jpg') no-repeat center center/cover;
 }
 
-.login-title {
-    font-size: 26px;
-    color: #ffd321;
-    font-weight: bold;
-    letter-spacing: 1px;
-    margin-bottom: 30px; /* Adds spacing below heading */
-}
-
 .background {
     position: absolute;
     top: 0;
@@ -24,21 +16,6 @@ body {
     width: 100%;
     height: 100%;
     background: url('https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/imgs/fundo.jpg') no-repeat center center/cover;
-}
-
-.login-container {
-    position: relative;
-    width: 400px;
-    height: 440px;
-    backdrop-filter: blur(15px);
-    padding: 30px; /* More padding for room */
-    border-radius: 15px;
-    text-align: center;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .about-container {
@@ -72,54 +49,6 @@ body {
     height: 400px;
     overflow-y: scroll;
     overflow-x: hidden;
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 30px; /* ADDS SPACING BETWEEN FORM ELEMENTS */
-}
-
-input {
-    width: 90%;
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background: rgba(255, 255, 255, 0.2);
-    color: white;
-    font-size: 16px;
-}
-
-button {
-    background-color: #ffd321;
-    color: white;
-    padding: 12px;
-    border: none;
-    width: 90%;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-	font-weight: bold;
-}
-
-/* sign up option on login page */	
-.signup-text {
-    margin-top: 20px; /* Increased spacing */
-    font-size: 14px;
-    text-align: center;
-    color: white;
-}
-
-.signup-text a {
-    color: #ffd321;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.signup-text a:hover {
-    text-decoration: underline;
 }
 
 /* Navigation Bar */
