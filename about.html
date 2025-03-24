@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/styles/about.css">
 </head>
 <body>
+
     <!-- Navigation Bar -->
     <nav class="navbar">
         <div class="left-section">
@@ -23,11 +24,11 @@
     
     <div class="dropdown-menu" id="dropdownMenu">
         <ul>
-            <li><a href="#">Início</a></li>
-            <li><a href="#">Células</a></li>
-            <li><a href="#">Projetos</a></li>
-            <li><a href="#">Sobre</a></li>
-            <li><a href="#">Entrar</a></li>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="celulas.html">Células</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="login.html">Entrar</a></li>
         </ul>
     </div>
     
@@ -40,10 +41,15 @@
         </div>
     </div>
 
-</body>
-
-<footer class="footer">
+    <footer class="footer">
         <span class="footer_conteudo">Desenvolvido por Luiz Carlos</span>
-</footer>
+    </footer>
 
+    <script>
+        function toggleMenu() {
+            document.getElementById("dropdownMenu").classList.toggle("show");
+        }
+    </script>
+
+</body>
 </html>

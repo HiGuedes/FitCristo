@@ -27,7 +27,7 @@
             <li><a href="celulas.html">Células</a></li>
             <li><a href="projetos.html">Projetos</a></li>
             <li><a href="about.html">Sobre</a></li>
-            <li><a href="#">Entrar</a></li>
+            <li><a href="login.html">Entrar</a></li>
         </ul>
     </div>
     
@@ -46,7 +46,9 @@
         function toggleMenu() {
             document.getElementById("dropdownMenu").classList.toggle("show");
         }
+    </script>
 
+    <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
             let username = document.getElementById("username").value;
             let password = document.getElementById("password").value;
@@ -59,10 +61,10 @@
             }
         });
     </script>
+    
+    <footer class="footer">
+        <span class="footer_conteudo">Desenvolvido por <a href="https://www.linkedin.com/in/luizcguedes/" id="footer_name">Luiz Carlos</a></span>
+    </footer>
+
 </body>
-
-<footer class="footer">
-        <span class="footer_conteudo">Desenvolvido por Luiz Carlos</span>
-</footer>
-
 </html>

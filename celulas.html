@@ -3,9 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Celulas</title>
+    <link rel="stylesheet" href="src/styles/celulas.css">
 </head>
 <body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="logo">
+                <img src="src/assets/imgs/lagoinhaiconGC.png" alt="Lagoinha GC">
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Sobre o que quer saber?">
+        </div>
+    </nav>
     
+    <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="celulas.html">Células</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="login.html">Entrar</a></li>
+        </ul>
+    </div>
+
+        <!-- Celula -->
+        <div class="card">
+            <div class="card__img">
+              <img src="https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/celulas/emanuel.jpg" alt="Emanuel" />
+            </div>
+            <h2>Emanuel</h2>
+            <p>Líder:</p> Rodrigo e Thatira
+            <div class="card__social">
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              </a>
+            </div>
+            <button>Entre em contato</button>
+          </div>
+      
+          <!-- Celula -->
+          <div class="card">
+            <div class="card__img">
+              <img src="https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/celulas/emanuel.jpg" alt="Emanuel" />
+            </div>
+            <h2>Emanuel</h2>
+            <p>Líder:</p> Rodrigo e Thatira
+            <div class="card__social">
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              </a>
+            </div>
+            <button>Entre em contato</button>
+          </div>
+      
+          <!-- Celula -->
+          <div class="card">
+            <div class="card__img">
+              <img src="https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/celulas/emanuel.jpg" alt="Emanuel" />
+            </div>
+            <h2>Emanuel</h2>
+            <p>Líder:</p> Rodrigo e Thatira
+            <div class="card__social">
+              <a href="#">
+                <i class="fa-brands fa-whatsapp"></i>
+              </a>
+              </a>
+            </div>
+            <button>Entre em contato</button>
+          </div>
+
+          <footer class="footer">
+            <span class="footer_conteudo">Desenvolvido por Luiz Carlos</span>
+        </footer>
+
+        <script>
+            function toggleMenu() {
+                document.getElementById("dropdownMenu").classList.toggle("show");
+            }
+        </script>
+        
 </body>
 </html>
