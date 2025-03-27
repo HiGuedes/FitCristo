@@ -6,7 +6,7 @@ body {
     height: 100vh;
     margin: 0;
     overflow: hidden;
-    background: url('https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/imgs/fundo.jpg') no-repeat center center/cover;
+    background: url('../assets/img/fundo.jpg') no-repeat center center/cover;
 }
 
 .background {
@@ -15,7 +15,7 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: url('https://raw.githubusercontent.com/HiGuedes/FitCristo/refs/heads/main/src/assets/imgs/fundo.jpg') no-repeat center center/cover;
+    background: url('../assets/img/fundo.jpg') no-repeat center center/cover;
 }
 
 /* Navigation Bar */
