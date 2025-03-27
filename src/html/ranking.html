@@ -4,14 +4,40 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@700&family=Inter:wght@400;700&display=swap"rel="stylesheet">
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="stylesheet" href="src/styles/ranking.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/ranking.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCristo - Ranking Mensal</title>
 
 </head>
 <body>
+
+    
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="left-section">
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <div class="logo">
+                <img src="../assets/img/lagoinhaiconGC.png" alt="Lagoinha GC">
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" placeholder="Sobre o que quer saber?">
+        </div>
+    </nav>
+    
+    <div class="dropdown-menu" id="dropdownMenu">
+        <ul>
+            <li><a href="../../index.html">Início</a></li>
+            <li><a href="celulas.html">Células</a></li>
+            <li><a href="projetos.html">Projetos</a></li>
+            <li><a href="about.html">Sobre</a></li>
+            <li><a href="login.html">Entrar</a></li>
+        </ul>
+    </div>
+
 
     <div class="ranking_container">
         <div class="ranking_box">
@@ -36,18 +62,6 @@
             </div>
             -->
 
-            <button onclick="registrarLogin()">Registrar Dados</button>
-
-            <script>
-                function registrarLogin(){
-                    window.location.href = "painel.html";
-                }
-            </script><br>
-
-            <div class="melhor-participante">
-                <h2>Melhor Resultado: <span id="nome-melhor"></span></h2>
-            </div>
-
         </div>
     </div>
 
@@ -56,7 +70,7 @@
     </div>
 </footer>
 
-    <script src="src/api-project/ranking.js" type="text/javascript"></script>
-    <script src="src/api-project/script.js" type="text/javascript"></script>>
+    <script src="../js/ranking.js" type="text/javascript"></script>
+    <script src="../js/script.js" type="text/javascript"></script>>
 </body>
 </html>

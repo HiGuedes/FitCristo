@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FitCristo - Login</title>
-    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/css/styles.css">
+    <link rel="stylesheet" href="src/css/index.css">
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -12,7 +13,7 @@
         <div class="left-section">
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="logo">
-                <img src="src/assets/imgs/lagoinhaiconGC.png" alt="Lagoinha GC">
+                <img src="src/assets/img/lagoinhaiconGC.png" alt="Lagoinha GC">
             </div>
         </div>
 
@@ -23,43 +24,26 @@
     
     <div class="dropdown-menu" id="dropdownMenu">
         <ul>
-            <li><a href="index.html">Início</a></li>
-            <li><a href="celulas.html">Células</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="about.html">Sobre</a></li>
-            <li><a href="login.html">Entrar</a></li>
+            <li><a href="#">Início</a></li>
+            <li><a href="src/html/celulas.html">Células</a></li>
+            <li><a href="src/html/projetos.html">Projetos</a></li>
+            <li><a href="src/html/about.html">Sobre</a></li>
+            <li><a href="src/html/login.html">Entrar</a></li>
         </ul>
     </div>
     
-    <div class="login-container">
-        <h2 class="login-title">Entrar</h2>
-        <form id="loginForm">
-            <input type="text" id="username" placeholder="Célula" required>
-            <input type="password" id="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
-        </form>
-        <p id="error-message" class="error"></p>
-        <p class="signup-text">Não tem acesso ao Login? <a href="#" id="signup-link">Peça seu líder de GC aqui!</a></p>
+    <div class="index-container">
+        <h2 class="index-title">Inicio</h2>
+        <form id="indexForm">
+            <h2>Bem vindos ao projeto FitCristo</h2>
+            <span>Este projeto foi direcionado a divulgação e participação dos membros da Igreja Batista Lagoinha, unidade Copacabana Belo Horizonte.<br> Conheça nossos projetos e missões, entre em contato com a célula mais próxima da sua casa e venha nos conhecer!</span>
+            </span>
     </div>
     
     <script>
         function toggleMenu() {
             document.getElementById("dropdownMenu").classList.toggle("show");
         }
-    </script>
-
-    <script>
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            let username = document.getElementById("username").value;
-            let password = document.getElementById("password").value;
-            let errorMessage = document.getElementById("error-message");
-            
-            if (!username || !password) {
-                event.preventDefault();
-                errorMessage.textContent = "Usuário ou senha estão errados!";
-                errorMessage.style.color = "red";
-            }
-        });
     </script>
     
     <footer class="footer">
