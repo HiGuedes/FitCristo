@@ -1,23 +1,20 @@
 // funções de botões no index.html
-function mostrarLogin() {
-    document.getElementById("loginBox").style.display = "block";
+if (localStorage.getItem("token") == null) {
+    alert("VocÃª precisa estar logado para acessar essa pÃ¡gina");
+    window.location.href = "./assets/html/singin.html";
 }
-
-function validarLogin() {
-    let user = document.getElementById("usuario").value;
-    let pass = document.getElementById("senha").value;
-
-    if (user === "emanuel" && pass === "iblc2025") {
-        window.location.href = "ranking.html";
-    } else {
-        alert("Usuário ou senha incorretos!");
-    }
-}
-
-function registrarLogin(){
-    window.location.href = "painel.html";
-}
-
+  
+  const userLogado = JSON.parse(localStorage.getItem("userLogado"));
+  
+  const logado = document.querySelector("#logado");
+  logado.innerHTML = `OlÃ¡ ${userLogado.nome}`;
+  
+  function sair() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("userLogado");
+    window.location.href = "./assets/html/signin.html";
+  }
+  
 
 // Dados do registro no painel.html
 async function enviarDados() {

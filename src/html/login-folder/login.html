@@ -3,9 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="../../css/styles.css">
+    <link rel="stylesheet" href="../../css/login.css">
     <title>FitCristo - Login</title>
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/login.css">
+
 </head>
 <body>
     <!-- Navigation Bar -->
@@ -13,7 +15,7 @@
         <div class="left-section">
             <div class="menu-icon" onclick="toggleMenu()">☰</div>
             <div class="logo">
-                <img src="../assets/icons/lagoinhaiconCPC.png" alt="Lagoinha GC">
+                <img src="../../assets/icons/lagoinhaiconCPC.png" alt="Lagoinha GC">
             </div>
         </div>
 
@@ -24,41 +26,36 @@
     
     <div class="dropdown-menu" id="dropdownMenu">
         <ul>
-            <li><a href="../../index.html">Início</a></li>
-            <li><a href="celulas.html">Células</a></li>
-            <li><a href="projetos.html">Projetos</a></li>
-            <li><a href="about.html">Sobre</a></li>
+            <li><a href="../../../index.html">Início</a></li>
+            <li><a href="../celulas.html">Células</a></li>
+            <li><a href="../projetos.html">Projetos</a></li>
+            <li><a href="../about.html">Sobre</a></li>
             <li><a href="#">Entrar</a></li>
         </ul>
     </div>
     
+    <!-- Conteudo da página -->
+
     <div class="login-container">
         <h2 class="login-title">Entrar</h2>
         <form id="loginForm">
             <input type="text" id="username" placeholder="Célula" required>
             <input type="password" id="password" placeholder="Senha" required>
-            <button type="submit">Entrar</button>
+            
+            
+            <div class="justify-center">
+                <i class="fa fa-eye" aria-hidden="true"></i>
+                <button type="submit" onclick="entrar()">Entrar</button>
+            </div>
         </form>
         <p id="error-message" class="error"></p>
         <p class="signup-text">Não tem acesso ao Login? <a href="contato.html" id="signup-link">Peça seu líder de GC aqui!</a></p>
     </div>
-    
+
     <script>
         function toggleMenu() {
             document.getElementById("dropdownMenu").classList.toggle("show");
         }
-
-        document.getElementById("loginForm").addEventListener("submit", function(event) {
-            let username = document.getElementById("username").value;
-            let password = document.getElementById("password").value;
-            let errorMessage = document.getElementById("error-message");
-            
-            if (!username || !password) {
-                event.preventDefault();
-                errorMessage.textContent = "Usuário ou senha estão errados!";
-                errorMessage.style.color = "red";
-            }
-        });
     </script>
 
 <footer class="footer">
